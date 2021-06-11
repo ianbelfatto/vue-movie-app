@@ -10,6 +10,10 @@
       <router-link to="/login">Login</router-link>
       |
       <router-link to="/logout">Logout</router-link>
+      |
+      <router-link to="/movies">Movies (Index)</router-link>
+      |
+      <router-link to="/movies/new">New Movies</router-link>
     </div>
     <router-view />
   </div>
