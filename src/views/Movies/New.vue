@@ -19,6 +19,10 @@
         <label>Plot:</label>
         <input type="text" class="form-control" v-model="newMovieParams.plot" />
       </div>
+      <small v-if="newMovieParams.plot.length < 101">
+        Character's Remaining: {{ 100 - newMovieParams.plot.length }}
+      </small>
+      <small v-if="newMovieParams.plot.length > 100" class="text-danger">Cannot be greater than 100 characters!</small>
       <br />
       <input type="submit" class="btn btn-primary" value="Submit" />
     </form>
@@ -26,13 +30,21 @@
   </div>
 </template>
 
+<style scoped>
+.text-danger {
+  color: red;
+}
+</style>
+
 <script>
 import axios from "axios";
 
 export default {
   data: function () {
     return {
-      newMovieParams: {},
+      newMovieParams: {
+        plot: "",
+      },
       errors: [],
     };
   },
