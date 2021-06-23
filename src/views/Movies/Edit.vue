@@ -20,9 +20,11 @@
         <input type="text" class="form-control" v-model="editMovieParams.plot" />
       </div>
       <br />
-      <router-link :to="`/movies/${editMovieParams.id}`" tag="button">Back to Current Movie</router-link>
+      <router-link class="btn btn-primary" :to="`/movies/${editMovieParams.id}`" tag="button">
+        Back to Current Movie
+      </router-link>
       |
-      <input type="submit" class="btn btn-primary" value="Submit" />
+      <input type="submit" class="btn btn-success" value="Submit" />
     </form>
     <br />
     editMovieParams: {{ editMovieParams }}
