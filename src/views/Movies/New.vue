@@ -24,7 +24,7 @@
       </small>
       <small v-if="newMovieParams.plot.length > 100" class="text-danger">Cannot be greater than 100 characters!</small>
       <br />
-      <input type="submit" class="btn btn-primary" value="Submit" />
+      <input type="submit" class="btn btn-success" value="Submit" />
     </form>
     newMovieParams: {{ newMovieParams }}
   </div>
