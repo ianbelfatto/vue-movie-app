@@ -3,11 +3,11 @@
     <h2>{{ movie.title }}</h2>
     <p>{{ movie.year }}</p>
     <p>{{ movie.plot }}</p>
-    <router-link to="/movies" tag="button">Back to All Movies</router-link>
+    <router-link class="btn btn-primary" to="/movies" tag="button">Back to All Movies</router-link>
     |
-    <router-link :to="`/movies/${movie.id}/edit`" tag="button">Edit Movie</router-link>
+    <router-link class="btn btn-secondary" :to="`/movies/${movie.id}/edit`">Edit Movie</router-link>
     |
-    <button v-on:click="destroyMovie()">Delete Movie</button>
+    <button class="btn btn-warning" v-on:click="destroyMovie()">Delete Movie</button>
   </div>
 </template>
 
