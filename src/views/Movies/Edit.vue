@@ -9,7 +9,7 @@
       </ul>
       <div class="form-group">
         <label>Title:</label>
-        <input type="text" class="form-control" v-model="editMovieParams.title" />
+        <input type="text" class="form-control" v-model="editMovieParams.title" placeholder="Title" />
       </div>
       <div class="form-group">
         <label>Year:</label>

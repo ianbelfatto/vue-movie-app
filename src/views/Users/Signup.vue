@@ -9,19 +9,24 @@
       </ul>
       <div class="form-group">
         <label>Name:</label>
-        <input type="text" class="form-control" v-model="newUserParams.name" />
+        <input type="text" class="form-control" v-model="newUserParams.name" placeholder="Name" />
       </div>
       <div class="form-group">
         <label>Email:</label>
-        <input type="email" class="form-control" v-model="newUserParams.email" />
+        <input type="email" class="form-control" v-model="newUserParams.email" placeholder="Email" />
       </div>
       <div class="form-group">
         <label>Password:</label>
-        <input type="password" class="form-control" v-model="newUserParams.password" />
+        <input type="password" class="form-control" v-model="newUserParams.password" placeholder="Enter Password" />
       </div>
       <div class="form-group">
-        <label>Password confirmation:</label>
-        <input type="password" class="form-control" v-model="newUserParams.password_confirmation" />
+        <label>Password Confirmation:</label>
+        <input
+          type="password"
+          class="form-control"
+          v-model="newUserParams.password_confirmation"
+          placeholder="Enter Password Again"
+        />
       </div>
       <br />
       <input type="submit" class="btn btn-primary" value="Submit" />

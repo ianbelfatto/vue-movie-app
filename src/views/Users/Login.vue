@@ -7,11 +7,11 @@
       </ul>
       <div>
         <label>Email:</label>
-        <input type="email" v-model="email" />
+        <input type="email" v-model="email" placeholder="Email" />
       </div>
       <div>
         <label>Password:</label>
-        <input type="password" v-model="password" />
+        <input type="password" v-model="password" placeholder="Password" />
       </div>
       <br />
       <input type="submit" value="Submit" />
@@ -41,7 +41,7 @@ export default {
         .then((response) => {
           axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
-          this.$router.push("/home");
+          this.$router.push("/movies");
         })
         .catch((error) => {
           console.log(error.response);

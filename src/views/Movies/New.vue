@@ -9,15 +9,15 @@
       </ul>
       <div class="form-group">
         <label>Title:</label>
-        <input type="text" class="form-control" v-model="newMovieParams.title" />
+        <input type="text" class="form-control" v-model="newMovieParams.title" placeholder="Title" />
       </div>
       <div class="form-group">
         <label>Year:</label>
-        <input type="text" class="form-control" v-model="newMovieParams.year" />
+        <input type="text" class="form-control" v-model="newMovieParams.year" placeholder="Year" />
       </div>
       <div class="form-group">
         <label>Plot:</label>
-        <input type="text" class="form-control" v-model="newMovieParams.plot" />
+        <input type="text" class="form-control" v-model="newMovieParams.plot" placeholder="Plot" />
       </div>
       <small v-if="newMovieParams.plot.length < 101">
         Character's Remaining: {{ 100 - newMovieParams.plot.length }}
